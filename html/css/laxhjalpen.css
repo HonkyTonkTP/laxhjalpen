@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html {
+  margin: 2%;
+}
 body {
   margin: auto; /* Centrerar sidan */
   max-width: 860px;
@@ -20,6 +23,21 @@ footer {
   margin-top: 3em;
   text-align: center;
   columns: #999;
+}
+
+.startpage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.startpage header,
+.startpage footer {
+  flex: 0 0 100%;
+}
+
+.startpage section {
+  flex: 0 0 22%;
 }
 
 .startpage h1 {
