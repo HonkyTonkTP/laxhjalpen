@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+  margin: auto; /* Centrerar sidan */
+  max-width: 860px;
+  font-family: sans-serif;
+  font-size: 100%;
+}
+
+section,
+header,
+footer {
+  outline: 1px solid red; /* Temporär */
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  margin-top: 3em;
+  text-align: center;
+  columns: #999;
+}
+
+.startpage h1 {
+  font-size: 500%;
+}
+
+.tagline {
+  font-size: 120%;
+  padding: 0.5em; /* Avstånd innuti elementet till kantlinjen*/
+  border-top: 3px double #00af64;
+  border-bottom: 3px double #00af64;
+  margin: 1em 0; /* Marginal utanför elementet, nedåt men inte uppåt */
+}
+
+.menu > h2 {
+  margin: 0 0 1em;
+  padding: 2em 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
