@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kontakt - Läxhjälpen</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Merienda+One" />
+    <link rel="stylesheet" href="css/laxhjalpen.css" />
+  </head>
+  <body class="subpage">
+    <header>
+      <div class="hwrap">
+        <a href="./"
+          ><img class="logo" alt="Startsidan" src="img/laxlogo.png"
+        /></a>
+        <h1>Läxhjälpen: <span>Kontakt</span></h1>
+      </div>
+      <p class="tagline"></p>
+    </header>
+    <nav>
+      <ul class="menu">
+        <li><a href="om-oss.html">Vilka vi är &#x3020;</a></li>
+        <li><a href="arbeten.html">Vad vi gör &#x2318;</a></li>
+        <li><a href="blog.php">Blogg &#10026;</a></li>
+        <li><a href="kontakt.html">Kontakt &#9742;</a></li>
+      </ul>
+    </nav>
+    <div role="main">
+      <h2>Kontaktformulär</h2>
+      <form action="kontakt.php" method="post">
+        <fieldset>
+          <legend>Vem är du?</legend>
+          <p>
+            <label for="uname">Namn:</label>
+            <label for="uname" class="reqfield">
+              <strong class="required" title="Obligatorisk uppgift">*</strong>
+            </label>
+            <input type="text" name="uname" id="uname" required placeholder="Förnamn Efternamn">
+          </p>
+          <p>
+            <label for="umail">Mejladress:</label>
+            <label for="umail" class="reqfield">
+              <strong class="required" title="Obligatorisk uppgift">*</strong>
+            </label>
+            <input type="email" name="umail" id="umail" required placeholder="foo@bar.com">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Meddelande</legend>
+          <p>
+            <label for="mmessage">Text:</label>
+            <label for="mmessage" class="reqfield">
+              <strong class="required" title="Obligatorisk uppgift">*</strong>
+            </label>
+            <textarea name="mmessage" id="mmessage" required placeholder="Skriv ditt meddelande. Minst 25 tecken."></textarea>
+          </p>
+        </fieldset>
+        <fieldset>
+          <p>
+            <input type="submit" value="skicka">
+          </p>
+          <input type="hidden" name="prevent_multiple_submits" value="{$random_string}">
+        </fieldset>
+      </form>
+    </div>
+    <footer>&copy; Lars Gunther och Thelin AB</footer>
+  </body>
+</html>
